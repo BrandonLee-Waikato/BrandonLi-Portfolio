@@ -1,6 +1,6 @@
 'use client'
 
-import Particle from '../../components/Particle'
+// import Particle from '../../components/Particle'
 import AboutCard from './AboutCard'
 import Techstack from './Techstack'
 import Toolstack from './Toolstack'
@@ -11,7 +11,7 @@ import Image from 'next/image'
 export default function AboutPage() {
     return (
         <section className="relative bg-gradient-to-br from-green-900/80 to-black/80 text-white py-20">
-            <Particle />
+            {/*<Particle />*/}
 
             <div className="max-w-6xl mx-auto px-4 space-y-16">
                 <div className="flex flex-col md:flex-row items-center gap-8">

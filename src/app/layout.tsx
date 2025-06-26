@@ -4,7 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Pre from '@/components/Pre'
-import Particle from '@/components/Particle'
+// import Particle from '@/components/Particle'
 import ScrollToTop from '@/components/ScrollToTop'
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
         <Pre loading={false} />
 
         {/* background animation */}
-        <Particle />
+        {/*<Particle />*/}
 
         <ScrollToTop />
 

@@ -18,17 +18,17 @@ export default function ResumePage() {
                 {/* Page title */}
                 <h1 className="text-4xl font-bold text-center">Resume</h1>
 
-                {/* Top download button */}
-                <div className="flex justify-center">
-                    <a
-                        href="/resume.pdf"
-                        download
-                        className="inline-flex items-center gap-2 bg-green-700 px-6 py-2 rounded-lg hover:bg-green-600 transition"
-                    >
-                        <AiOutlineDownload className="text-2xl" />
-                        Download CV
-                    </a>
-                </div>
+                {/*/!* Top download button *!/*/}
+                {/*<div className="flex justify-center">*/}
+                {/*    <a*/}
+                {/*        href="/resume.pdf"*/}
+                {/*        download*/}
+                {/*        className="inline-flex items-center gap-2 bg-green-700 px-6 py-2 rounded-lg hover:bg-green-600 transition"*/}
+                {/*    >*/}
+                {/*        <AiOutlineDownload className="text-2xl" />*/}
+                {/*        Download CV*/}
+                {/*    </a>*/}
+                {/*</div>*/}
 
                 {/* Embedded PDF preview */}
                 <div className="overflow-hidden rounded-lg shadow-lg">

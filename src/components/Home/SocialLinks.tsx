@@ -3,10 +3,10 @@ import { FaLinkedinIn } from 'react-icons/fa'
 
 export default function SocialLinks() {
     const socials = [
-        { icon: <AiFillGithub />, url: 'https://github.com/yourgithub' },
-        { icon: <FaLinkedinIn />, url: 'https://linkedin.com/in/yourlinkedin' },
-        { icon: <AiOutlineTwitter />, url: 'https://twitter.com/yourtwitter' },
-        { icon: <AiFillInstagram />, url: 'https://instagram.com/yourinsta' },
+        { icon: <AiFillGithub />, url: 'https://github.com/' },
+        { icon: <FaLinkedinIn />, url: 'https://linkedin.com/in/' },
+        { icon: <AiOutlineTwitter />, url: 'https://twitter.com/' },
+        { icon: <AiFillInstagram />, url: 'https://instagram.com/' },
     ]
 
     return (

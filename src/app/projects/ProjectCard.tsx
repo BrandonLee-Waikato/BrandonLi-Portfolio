@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { BsGithub } from 'react-icons/bs'
 import { CgWebsite } from 'react-icons/cg'
 
@@ -30,21 +29,23 @@ export default function ProjectCard({
                 <h3 className="text-2xl font-semibold text-green-400 mb-2">{title}</h3>
                 <p className="flex-grow mb-4 text-gray-200">{description}</p>
                 <div className="mt-auto flex space-x-4">
-                    <Link
+                    <a
                         href={ghLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 bg-green-700 px-4 py-2 rounded hover:bg-green-600 transition text-white"
                     >
                         <BsGithub /> {isBlog ? 'Blog' : 'GitHub'}
-                    </Link>
+                    </a>
                     {!isBlog && demoLink && (
-                        <Link
+                        <a
                             href={demoLink}
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 bg-green-700 px-4 py-2 rounded hover:bg-green-600 transition text-white"
                         >
                             <CgWebsite /> Demo
-                        </Link>
+                        </a>
                     )}
                 </div>
             </div>

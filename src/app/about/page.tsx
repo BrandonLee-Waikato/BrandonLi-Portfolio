@@ -21,12 +21,12 @@ export default function AboutPage() {
                         </h1>
                         <AboutCard />
                     </div>
-                    <div className="flex-1 text-center">
+                    <div className="flex-1 text-center ">
                         <Image
-                            src="/vector.png"
+                            src="/vector2.png"
                             alt="About Illustration"
-                            width={400}
-                            height={400}
+                            width={700}
+                            height={700}
                             className="mx-auto"
                         />
                     </div>

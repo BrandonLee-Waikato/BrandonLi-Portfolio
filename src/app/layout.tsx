@@ -20,16 +20,14 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className="relative flex flex-col min-h-screen bg-gradient-to-bl from-black/90 to-green-700/80 text-white">
-        {/* 预加载遮罩 */}
+
         <Pre loading={false} />
 
-        {/* 粒子背景 */}
+        {/* background animation */}
         <Particle />
 
-        {/* 路由切换自动滚动到顶部 */}
         <ScrollToTop />
 
-        {/* 导航栏 */}
         <Navbar />
 
         {/* 主内容区 */}

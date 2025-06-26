@@ -25,7 +25,7 @@ export default function Footer() {
                         <AiFillGithub />
                     </a>
                     <a
-                        href="https://twitter.com/your-twitter"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400"
@@ -33,7 +33,7 @@ export default function Footer() {
                         <AiOutlineTwitter />
                     </a>
                     <a
-                        href="https://linkedin.com/in/your-linkedin"
+                        href="http://www.linkedin.com/in/brandon-lee-xl443"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400"
@@ -41,7 +41,7 @@ export default function Footer() {
                         <FaLinkedinIn />
                     </a>
                     <a
-                        href="https://instagram.com/your-instagram"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-pink-400"

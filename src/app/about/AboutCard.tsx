@@ -1,4 +1,13 @@
+'use client'
+
+import Link from 'next/link'
 import { ImPointRight } from 'react-icons/im'
+
+const activities = [
+    { name: 'Playing Games', href: '/about/PlayingGames' },
+    { name: 'Fishing', href: '/about/Fishing' },
+    { name: 'Travelling', href: '/about/Travelling' }
+];
 
 export default function AboutCard() {
     return (
@@ -17,9 +26,15 @@ export default function AboutCard() {
                     Apart from coding, some other activities that I love to do!
                 </p>
                 <ul className="list-disc list-inside space-y-2">
-                    {['Playing Games', 'Writing Tech Blogs', 'Travelling'].map((item) => (
-                        <li key={item} className="flex items-center gap-2">
-                            <ImPointRight className="text-green-400" /> {item}
+                    {activities.map((item) => (
+                        <li key={item.name} className="flex items-center gap-2">
+                            <ImPointRight className="text-green-400" />
+                            <Link
+                                href={item.href}
+                                className="text-green-300 hover:underline hover:text-green-400 transition"
+                            >
+                                {item.name}
+                            </Link>
                         </li>
                     ))}
                 </ul>

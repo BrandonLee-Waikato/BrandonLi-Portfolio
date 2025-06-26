@@ -107,3 +107,20 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+
+/* src/app/globals.css */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+
+  animation: fade-in-up 1.5s ease-out forwards;
+}

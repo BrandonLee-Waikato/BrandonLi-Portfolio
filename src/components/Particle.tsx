@@ -8,6 +8,9 @@ export default function Particle() {
         <Particles
             id="tsparticles"
             options={{
+                // // 关闭全屏模式，让它只在父容器里渲染
+                fullScreen: { enable: false },
+
                 particles: {
                     number: { value: 160, density: { enable: true, area: 1500 } },
                     links: { enable: false, opacity: 0.03 },
@@ -21,7 +24,7 @@ export default function Particle() {
                 },
                 detectRetina: true,
             }}
-            className="absolute inset-0 z-0"
+            className="absolute inset-0 z-0 pointer-events-none"
         />
     )
 }

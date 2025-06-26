@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+// import Image from 'next/image'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Typewriter from 'typewriter-effect'
 import MatterCanvas from "@/app/MatterCanvas"
@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
                 {/* 右侧头像 */}
                 <div className="flex-1 flex items-center justify-center">
-                    <Image
+                    <img
                         src="/vector.png"
                         alt="Avatar"
                         width={400}

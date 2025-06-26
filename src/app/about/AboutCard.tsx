@@ -39,7 +39,7 @@ export default function AboutCard() {
                     ))}
                 </ul>
                 <p className="italic text-green-300">
-                    "Turning streams into stories, one frame at a time."
+                    Turning streams into stories, one frame at a time.
                 </p>
                 <footer className="text-sm text-gray-400">— Brandon Li</footer>
             </blockquote>

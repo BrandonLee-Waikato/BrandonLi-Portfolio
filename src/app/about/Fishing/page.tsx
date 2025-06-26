@@ -14,7 +14,6 @@ export default function Page() {
                         src="/Fishing1.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
-
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         {/*Counter-Strike*/}

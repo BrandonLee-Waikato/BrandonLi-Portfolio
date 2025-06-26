@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import {AiOutlineArrowLeft} from "react-icons/ai";
+import Image from "next/image";
 
 export default function Page() {
     return (

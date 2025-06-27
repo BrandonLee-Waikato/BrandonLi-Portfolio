@@ -44,24 +44,24 @@ export default function RTSPDemo() {
                     <p className="text-lg text-gray-200 text-center mb-8">
                         🎅Hiko club treasure Hunt Function at XMAS. 🎄
                     </p>
-                    <video
-                        ref={videoRef}
-                        src="/rtsp_video.mp4"
-                        controls
-                        autoPlay
-                        muted
-                        playsInline
-                        className="w-full h-[480px] max-h-[65vh] rounded-xl shadow mb-6 object-contain"
-                    />
-                    <video
-                        ref={videoRef}
-                        src="/rtsp_video2.mp4"
-                        controls
-                        autoPlay
-                        muted
-                        playsInline
-                        className="w-full h-[480px] max-h-[65vh] rounded-xl shadow mb-6 object-contain"
-                    />
+                    {/*<video*/}
+                    {/*    ref={videoRef}*/}
+                    {/*    src="/rtsp_video.mp4"*/}
+                    {/*    controls*/}
+                    {/*    autoPlay*/}
+                    {/*    muted*/}
+                    {/*    playsInline*/}
+                    {/*    className="w-full h-[480px] max-h-[65vh] rounded-xl shadow mb-6 object-contain"*/}
+                    {/*/>*/}
+                    {/*<video*/}
+                    {/*    ref={videoRef}*/}
+                    {/*    src="/rtsp_video2.mp4"*/}
+                    {/*    controls*/}
+                    {/*    autoPlay*/}
+                    {/*    muted*/}
+                    {/*    playsInline*/}
+                    {/*    className="w-full h-[480px] max-h-[65vh] rounded-xl shadow mb-6 object-contain"*/}
+                    {/*/>*/}
                     {/*<video*/}
                     {/*    ref={videoRef}*/}
                     {/*    src="/rtsp_video3.avi"*/}
@@ -72,13 +72,13 @@ export default function RTSPDemo() {
                     {/*    className="w-full h-[480px] max-h-[65vh] rounded-xl shadow mb-6 object-contain"*/}
                     {/*/>*/}
 
-                    <img
-                        src="/rtsp_img.png"
-                        alt="Group Photo"
-                        className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
-                    />
-                    <p className="text-lg text-gray-200 text-center mb-8">
-                        Weekly Demonstration and report </p>
+                    {/*<img*/}
+                    {/*    src="/rtsp_img.png"*/}
+                    {/*    alt="Group Photo"*/}
+                    {/*    className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"*/}
+                    {/*/>*/}
+                    {/*<p className="text-lg text-gray-200 text-center mb-8">*/}
+                    {/*    Weekly Demonstration and report </p>*/}
 
                     <img
                         src="/rtsp_img2.jpg"

@@ -10,6 +10,9 @@ import ScrollToTop from '@/components/ScrollToTop'
 export const metadata = {
     title: 'Portfolio',
     description: 'Software Developer Portfolio Website',
+    // icons: {
+    //     icon: '/favicon.ico',
+    // },
 }
 
 export default function RootLayout({

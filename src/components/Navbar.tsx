@@ -6,7 +6,7 @@ import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
     AiOutlineUser,
-    AiFillStar,
+    AiFillStar, AiOutlineMenu,
 } from 'react-icons/ai'
 import { CgGitFork, CgFileDocument } from 'react-icons/cg'
 import { ImBlog } from 'react-icons/im'
@@ -37,8 +37,12 @@ export default function Navbar() {
                     <img src="/logo-white-03.png" className="w-10 h-10" alt="logo" />
                 </Link>
 
-                <button className={`md:hidden ${linkColor}`} onClick={() => setExpanded(!expanded)}>
-                    ☰
+                <button
+                    className={`md:hidden ${linkColor} p-2`}
+                    onClick={() => setExpanded(!expanded)}
+                    aria-label="Open menu"
+                >
+                    <AiOutlineMenu className="text-4xl" /> {/* 这里控制菜单icon大小 */}
                 </button>
 
                 <div className={`md:flex space-x-6 ${expanded ? 'block mt-4' : 'hidden md:block'}`}>

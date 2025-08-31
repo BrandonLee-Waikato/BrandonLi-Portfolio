@@ -1,6 +1,7 @@
 // src/app/about/Techstack.tsx
 'use client'
 
+import type { IconType } from 'react-icons'
 import {
     DiJava,
     DiJavascript1,
@@ -20,8 +21,11 @@ import {
     SiThreedotjs,
     SiMinio,
 } from 'react-icons/si'
+import {JSX} from "react";
 
-const techs: { Icon: any; name: string }[] = [
+type Tech = { Icon: IconType; name: string }
+
+const techs: Tech[] = [
     { Icon: DiJava, name: 'Java' },
     { Icon: SiRust, name: 'Rust' },
     { Icon: DiJavascript1, name: 'JavaScript' },
@@ -39,15 +43,11 @@ const techs: { Icon: any; name: string }[] = [
     { Icon: SiThreedotjs, name: 'Three.js' },
 ]
 
-export default function Techstack() {
+export default function Techstack(): JSX.Element {
     return (
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-6">
-            {techs.map(({ Icon, name }, idx) => (
-                <div
-                    key={idx}
-                    className="flex justify-center"
-                    title={name}
-                >
+            {techs.map(({ Icon, name }) => (
+                <div key={name} className="flex justify-center" title={name}>
                     <Icon className="text-4xl text-green-400 hover:scale-110 transition" />
                 </div>
             ))}

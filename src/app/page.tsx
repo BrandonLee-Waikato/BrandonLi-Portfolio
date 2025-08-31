@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Typewriter from 'typewriter-effect'
 import MatterCanvas from "@/app/MatterCanvas"
 import Image from "next/image";
-import avatar from "../../public/vector.png";
+import avatar from "@/public/vector.png";
 
 export default function Home() {
     return (

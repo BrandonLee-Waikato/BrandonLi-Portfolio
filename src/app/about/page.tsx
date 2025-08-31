@@ -1,19 +1,15 @@
 'use client'
 
-// import Particle from '../../components/Particle'
 import AboutCard from './AboutCard'
 import Techstack from './Techstack'
 import Toolstack from './Toolstack'
 import Github from './Github'
 import Image from "next/image";
-// import Image from 'next/image'
-// import aboutImg from '/vector.png' // 放在 public/ 下
+import aboutImg from "@/public/vector2.png";
 
 export default function AboutPage() {
     return (
         <section className="relative bg-gradient-to-br from-green-900/80 to-black/80 text-white py-20">
-            {/*<Particle />*/}
-
             <div className="max-w-6xl mx-auto px-4 space-y-16">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     <div className="flex-1">
@@ -22,9 +18,9 @@ export default function AboutPage() {
                         </h1>
                         <AboutCard />
                     </div>
-                    <div className="flex-1 text-center ">
+                    <div className="flex-1 text-center">
                         <Image
-                            src="/vector2.png"
+                            src={aboutImg}
                             alt="About Illustration"
                             width={700}
                             height={700}

@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Typewriter from 'typewriter-effect'
 import MatterCanvas from "@/app/MatterCanvas"
 import Image from "next/image";
+import avatar from "../../public/vector.png";
 
 export default function Home() {
     return (
@@ -51,11 +52,12 @@ export default function Home() {
                 {/* 右侧头像 */}
                 <div className="flex-1 flex items-center justify-center">
                     <Image
-                        src="/vector.png"
+                        src={avatar}
                         alt="Avatar"
                         width={400}
                         height={400}
                         className="mx-auto drop-shadow-lg animate-fade-in-up"
+                        priority
                     />
                 </div>
             </div>

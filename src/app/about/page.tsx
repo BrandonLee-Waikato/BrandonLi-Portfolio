@@ -5,6 +5,7 @@ import AboutCard from './AboutCard'
 import Techstack from './Techstack'
 import Toolstack from './Toolstack'
 import Github from './Github'
+import Image from "next/image";
 // import Image from 'next/image'
 // import aboutImg from '/vector.png' // 放在 public/ 下
 
@@ -22,7 +23,7 @@ export default function AboutPage() {
                         <AboutCard />
                     </div>
                     <div className="flex-1 text-center ">
-                        <img
+                        <Image
                             src="/vector2.png"
                             alt="About Illustration"
                             width={700}

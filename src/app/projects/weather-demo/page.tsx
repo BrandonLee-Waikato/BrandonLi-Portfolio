@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import WeatherTechstack from './WeatherTechstack'
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function WeatherDemo() {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -52,10 +53,12 @@ export default function WeatherDemo() {
                     >
                         Download PPT (PDF)
                     </a>
-                    <img
+                    <Image
                         src="/Meeting Time.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         Meeting time of group members.

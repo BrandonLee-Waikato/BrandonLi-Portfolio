@@ -24,35 +24,43 @@ export default function Page() {
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center"></h2>
 
 
-                    <img
+                    <Image
                         src="/Layout.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                     </p>
 
-                    <img
+                    <Image
                         src="/Layout2.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                     </p>
 
-                    <img
+                    <Image
                         src="/Layout3.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
 
                     </p>
 
-                    <img
+                    <Image
                         src="/Layout4.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
 

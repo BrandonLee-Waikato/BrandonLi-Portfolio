@@ -1,6 +1,8 @@
 'use client'
 
 
+import Image from "next/image";
+
 export default function Page() {
     return (
         <section className="min-h-screen bg-gradient-to-bl from-black/90 to-green-700/80 flex items-start justify-center pt-32">
@@ -10,28 +12,34 @@ export default function Page() {
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center"></h2>
 
 
-                    <img
+                    <Image
                         src="/Gaming1.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         Counter-Strike
                     </p>
 
-                    <img
+                    <Image
                         src="/Gaming2.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         Red dead redemption 2
                     </p>
 
-                    <img
+                    <Image
                         src="/Gaming3.jpg"
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         TimberBorn

@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import RtspTechstack from './RtspTechstack'
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function RTSPDemo() {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -30,16 +31,20 @@ export default function RTSPDemo() {
                 {/* Contents at left*/}
                 <div className="bg-white/10 rounded-xl p-8 flex-1 shadow-lg">
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center">RTSP to Object Storage</h2>
-                    <img
+                    <Image
                         src="/rtsp_interface.png"
                         alt="RTSP Demo"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">Platform</p>
-                    <img
+                    <Image
                         src="/rtsp_group.jpeg"
                         alt="Group Photo"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         🎅Hiko club treasure Hunt Function at XMAS. 🎄
@@ -80,10 +85,12 @@ export default function RTSPDemo() {
                     {/*<p className="text-lg text-gray-200 text-center mb-8">*/}
                     {/*    Weekly Demonstration and report </p>*/}
 
-                    <img
+                    <Image
                         src="/rtsp_img2.jpg"
                         alt="Group Photo"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
+                        width={1600}
+                        height={900}
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">
                         Last day in Exaba.io with Mentor Nick </p>

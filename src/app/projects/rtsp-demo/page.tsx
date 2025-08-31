@@ -5,6 +5,9 @@ import RtspTechstack from './RtspTechstack'
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import Link from 'next/link';
 import Image from "next/image";
+import rtspInterface from '@/public/rtsp_interface.png'
+import rtspGroup from '@/public/rtsp_group.jpeg'
+import rtspImg2 from '@/public/rtsp_img2.jpg'
 
 export default function RTSPDemo() {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -32,7 +35,7 @@ export default function RTSPDemo() {
                 <div className="bg-white/10 rounded-xl p-8 flex-1 shadow-lg">
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center">RTSP to Object Storage</h2>
                     <Image
-                        src="/rtsp_interface.png"
+                        src={rtspInterface}
                         alt="RTSP Demo"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -40,7 +43,7 @@ export default function RTSPDemo() {
                     />
                     <p className="text-lg text-gray-200 text-center mb-8">Platform</p>
                     <Image
-                        src="/rtsp_group.jpeg"
+                        src={rtspGroup}
                         alt="Group Photo"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -86,7 +89,7 @@ export default function RTSPDemo() {
                     {/*    Weekly Demonstration and report </p>*/}
 
                     <Image
-                        src="/rtsp_img2.jpg"
+                        src={rtspImg2}
                         alt="Group Photo"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}

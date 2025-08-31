@@ -5,6 +5,9 @@ import HotelierTechstack from "@/app/projects/Hotelier/HotelierTechstack";
 import Link from "next/link";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import {JSX} from "react";
+import Hotelier2 from '@/public/Hotelier2.png'
+import Hotelier3 from '@/public/Hotelier3.png'
+import Hotelier1 from '@/public/Hotelier1.png'
 
 export default function Page(): JSX.Element {
     return (
@@ -25,7 +28,7 @@ export default function Page(): JSX.Element {
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center"></h2>
 
                     <Image
-                        src="/Hotelier2.png"
+                        src={Hotelier2}
                         alt="Hotelier login page"
                         width={1600}
                         height={900}
@@ -35,7 +38,7 @@ export default function Page(): JSX.Element {
                     <p className="text-lg text-gray-200 text-center mb-8">Login</p>
 
                     <Image
-                        src="/Hotelier3.png"
+                        src={Hotelier3}
                         alt="Hotelier administrator management page"
                         width={1600}
                         height={900}
@@ -44,7 +47,7 @@ export default function Page(): JSX.Element {
                     <p className="text-lg text-gray-200 text-center mb-8">Administrator Management</p>
 
                     <Image
-                        src="/Hotelier1.png"
+                        src={Hotelier1}
                         alt="Hotelier user interface"
                         width={1600}
                         height={900}

@@ -1,11 +1,17 @@
+// src/app/layout.tsx
+import type { Metadata } from "next";
+import React from "react";
 
-// src/app/head.tsx
-export default function Head() {
+export const metadata: Metadata = {
+    title: "Brandon Li · Portfolio",
+    description: "Brandon Li’s full stack developer portfolio",
+    // You can also add: icons: { icon: "/favicon.ico" } if you prefer file in /public
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <>
-            <title>Brandon Li · Portfolio</title>
-            <meta name="description" content="Brandon Li’s full stack developer portfolio" />
-            <link rel="icon" href="/favicon.ico" />
-        </>
-    )
+        <html lang="en">
+        <body>{children}</body>
+        </html>
+    );
 }

@@ -4,6 +4,10 @@
 import Link from "next/link";
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import Image from "next/image";
+import Layout from '@/public/Layout.jpg'
+import Layout2 from '@/public/Layout2.jpg'
+import Layout3 from '@/public/Layout3.jpg'
+import Layout4 from '@/public/Layout4.jpg'
 
 export default function Page() {
     return (
@@ -25,7 +29,7 @@ export default function Page() {
 
 
                     <Image
-                        src="/Layout.jpg"
+                        src={Layout}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -35,7 +39,7 @@ export default function Page() {
                     </p>
 
                     <Image
-                        src="/Layout2.jpg"
+                        src={Layout2}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -45,7 +49,7 @@ export default function Page() {
                     </p>
 
                     <Image
-                        src="/Layout3.jpg"
+                        src={Layout3}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -56,7 +60,7 @@ export default function Page() {
                     </p>
 
                     <Image
-                        src="/Layout4.jpg"
+                        src={Layout4}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}

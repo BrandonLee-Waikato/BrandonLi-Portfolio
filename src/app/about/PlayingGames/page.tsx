@@ -2,7 +2,9 @@
 
 
 import Image from "next/image";
-
+import Gaming1 from '@/public/Gaming1.jpg'
+import Gaming2 from '@/public/Gaming2.jpg'
+import Gaming3 from '@/public/Gaming3.jpg'
 export default function Page() {
     return (
         <section className="min-h-screen bg-gradient-to-bl from-black/90 to-green-700/80 flex items-start justify-center pt-32">
@@ -13,7 +15,7 @@ export default function Page() {
 
 
                     <Image
-                        src="/Gaming1.jpg"
+                        src={Gaming1}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -24,7 +26,7 @@ export default function Page() {
                     </p>
 
                     <Image
-                        src="/Gaming2.jpg"
+                        src={Gaming2}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}
@@ -35,7 +37,7 @@ export default function Page() {
                     </p>
 
                     <Image
-                        src="/Gaming3.jpg"
+                        src={Gaming3}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}

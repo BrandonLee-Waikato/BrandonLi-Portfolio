@@ -1,7 +1,6 @@
 'use client'
-
-
 import Image from "next/image";
+import Travelling from '@/public/Travelling.jpg'
 
 export default function Page() {
     return (
@@ -11,9 +10,8 @@ export default function Page() {
                 <div className="bg-white/10 rounded-xl p-8 flex-1 shadow-lg">
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center"></h2>
 
-
                     <Image
-                        src="/Travelling.jpg"
+                        src={Travelling}
                         alt="Weather Dashboard Screenshot"
                         className="block mx-auto w-full max-w-3xl rounded-xl shadow mb-8 object-contain"
                         width={1600}

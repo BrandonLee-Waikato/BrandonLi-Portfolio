@@ -62,9 +62,23 @@ export default function Home() {
                 </div>
             </div>
             {/* 底部横幅式物理引擎区域 */}
-            <div className="w-full flex justify-center mt-20">
-                <div className="w-full max-w-6xl">
-                    <MatterCanvas width={1200} height={420} />
+            <div className="w-full flex flex-col items-center mt-20">
+                {/* title above the frame */}
+                <span
+                    className="inline-block text-xs md:text-sm font-semibold tracking-widest uppercase
+               text-white/90 bg-black/30 backdrop-blur px-3 py-1 rounded-full shadow"
+                >
+    Experimental Playground
+  </span>
+
+                <div className="w-full max-w-6xl mt-3">
+                    <MatterCanvas
+                        width={1200}
+                        height={420}
+                        wallThickness={18}
+                        borderColor="#0b3d3a"  // optional: darker green border
+                        title=""               // turn off internal overlay title
+                    />
                 </div>
             </div>
 

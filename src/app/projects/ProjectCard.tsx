@@ -1,18 +1,21 @@
-'use client';
+'use client'
 
-import Image from "next/image";
-import { BsGithub } from 'react-icons/bs';
-import { CgWebsite } from 'react-icons/cg';
-import {JSX} from "react";
+import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
+import { BsGithub } from 'react-icons/bs'
+import { CgWebsite } from 'react-icons/cg'
+import { JSX } from 'react'
 
 interface ProjectCardProps {
-    title: string;
-    description: string;
-    ghLink: string;
-    demoLink?: string;
-    isBlog?: boolean;
-    imgSrc?: string; // '/xxx.png' in /public or an allowed remote URL
+    title: string
+    description: string
+    ghLink: string
+    demoLink?: string
+    isBlog?: boolean
+    imgSrc?: string | StaticImageData // allow static import or url string
 }
+
+const isInternal = (url?: string) => !!url && url.startsWith('/')
 
 export default function ProjectCard({
                                         title,
@@ -47,24 +50,34 @@ export default function ProjectCard({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 bg-green-700 px-4 py-2 rounded hover:bg-green-600 transition text-white"
-                        aria-label={isBlog ? "Open Blog" : "Open GitHub"}
+                        aria-label={isBlog ? 'Open Blog' : 'Open GitHub'}
                     >
-                        <BsGithub /> {isBlog ? "Blog" : "GitHub"}
+                        <BsGithub /> {isBlog ? 'Blog' : 'GitHub'}
                     </a>
 
                     {!isBlog && demoLink && (
-                        <a
-                            href={demoLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 bg-green-700 px-4 py-2 rounded hover:bg-green-600 transition text-white"
-                            aria-label="Open Demo"
-                        >
-                            <CgWebsite /> Demo
-                        </a>
+                        isInternal(demoLink) ? (
+                            <Link
+                                href={demoLink}
+                                className="inline-flex items-center gap-1 bg-green-700 px-4 py-2 rounded hover:bg-green-600 transition text-white"
+                                aria-label="Open Demo"
+                            >
+                                <CgWebsite /> Demo
+                            </Link>
+                        ) : (
+                            <a
+                                href={demoLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 bg-green-700 px-4 py-2 rounded hover:bg-green-600 transition text-white"
+                                aria-label="Open Demo"
+                            >
+                                <CgWebsite /> Demo
+                            </a>
+                        )
                     )}
                 </div>
             </div>
         </div>
-    );
+    )
 }

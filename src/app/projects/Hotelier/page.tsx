@@ -23,7 +23,6 @@ export default function Page() {
                 <div className="bg-white/10 rounded-xl p-8 flex-1 shadow-lg">
                     <h2 className="text-4xl font-bold mb-8 text-green-400 text-center"></h2>
 
-
                     <img
                         src="/Hotelier2.png"
                         alt="Weather Dashboard Screenshot"
